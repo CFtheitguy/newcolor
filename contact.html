@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Linear Tech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="assets/logo.png" alt="Linear Tech Logo" class="logo" />
+    </div>
+    <nav class="header-center">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="https://linearit.screenconnect.com/Bin/ScreenConnect.ClientSetup.exe?e=Access&y=Guest" class="button remote-header">Get Remote Support Now!</a>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <h1>Contact Linear Tech</h1>
+    <p class="muted">Drop us a line and we’ll get back to you ASAP.</p>
+
+    <form class="form-card" action="https://formsubmit.co/support@linearit.co" method="POST">
+      <input type="hidden" name="_subject" value="New message from Linear Tech website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_next" value="https://www.linearit.co/thank-you.html">
+
+      <div class="form-row">
+        <div>
+          <label for="name">Your Name *</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text">
+        </div>
+        <div>
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel">
+        </div>
+        <div class="full">
+          <label for="message">How can we help? *</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+      </div>
+
+      <div class="submit-row">
+        <button type="submit" class="button">Send Message</button>
+        <span class="note">We’ll reply within one business day.</span>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>Contact us: 845-604-1462 | support@linearit.co</p>
+    <p>&copy; 2025 Linear Tech. All rights reserved.</p>
+  </footer>
+</body>
+</html>
